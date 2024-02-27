@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Average Speed</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        var d = prompt("Enter distance (miles): ");
+        var t = prompt("Enter time (minutes): ");
+
+        var meters = d * 1609.34;
+        var secs = t * 60;
+
+        var avg = meters / secs;
+
+        document.getElementById("output").innerHTML = "Distance = " + d + " miles<br>" + "Time = " + t + " minutes<br>" + "Average Speed: " + avg.toFixed(2) + " m/s";
+    </script>
+</body>
+</html>
